@@ -63,6 +63,6 @@ public class Computer {
       System.out.println("Memory: " + this.getMemory() + " GB");
       System.out.println("Hard drive: " + this.getHardDrive() + " GB");
       System.out.println();
+      
   }
-
 }

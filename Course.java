@@ -11,12 +11,15 @@ public class Course {
         this.setNumberOfClasses(numberOfClasses);
         this.setCodeName(codeName);
     }
+
     public void setName(String courseName) {
       this.name = courseName;
     }
+
     public String getName() {
         return this.name;
     }
+
     public void setNumberOfClasses(int numberOfClasses) {
       this.numberOfClasses = numberOfClasses;
     }
@@ -24,6 +27,7 @@ public class Course {
     public int getNumberOfClasses() {
         return this.numberOfClasses;
     }
+
     public void setCodeName(String codeName) {
       this.codeName = codeName;
     }
@@ -36,6 +40,6 @@ public class Course {
         System.out.println("Name of Course: " + this.getName());
         System.out.println("Number of classes: " + this.getNumberOfClasses());
         System.out.println("Code name: " + this.getCodeName());
-    }
 
+    }
 }
