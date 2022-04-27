@@ -17,7 +17,7 @@ public class Main {
     Student Jelena = new Student("Jelena", "Bozic", 1930, qaCourse, dell);
     Jelena.printInConsole();
 
-    Student Sonja = new Student("Sonja", "Nikolic", 1987, selenium, lenovo);
+    Student Sonja = new Student("Sonja", "Nikolic", 1987);
     Sonja.printInConsole();
   }
 }

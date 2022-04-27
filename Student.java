@@ -9,6 +9,12 @@ public class Student{
   public Student(){
   }
 
+  public Student(String firstName, String lastName, int yearOfBirth) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.yearOfBirth = yearOfBirth;
+  }
+
   public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -61,8 +67,16 @@ public class Student{
     System.out.println("First name: " + this.getName());
     System.out.println("Last name: " + this.getLastName());
     System.out.println("Year of birth: " + this.getYear());
-    this.getCourse().printInConsole();
-    this.getComputer().printInConsole();
+    if (this.getCourse() == null) {
+      System.out.println("Course not defined");
+    } else {
+      this.getCourse().printInConsole();
+    }
+    if (this.getComputer() == null) {
+      System.out.println("Computer not defined");
+    } else {
+      this.getComputer().printInConsole();
+    }
     System.out.println();
     
   }
