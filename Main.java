@@ -19,5 +19,6 @@ public class Main {
 
     Student Sonja = new Student("Sonja", "Nikolic", 1987);
     Sonja.printInConsole();
+
   }
 }

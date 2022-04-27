@@ -5,10 +5,6 @@ public class Student{
   private Course course;
   private Computer computer;
 
-
-  public Student(){
-  }
-
   public Student(String firstName, String lastName, int yearOfBirth) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -63,20 +59,28 @@ public class Student{
     return this.yearOfBirth;
   }
 
-  public void printInConsole(){
-    System.out.println("First name: " + this.getName());
-    System.out.println("Last name: " + this.getLastName());
-    System.out.println("Year of birth: " + this.getYear());
+  private void printCourseDetails() {
     if (this.getCourse() == null) {
       System.out.println("Course not defined");
     } else {
       this.getCourse().printInConsole();
     }
+  }
+
+  private void printComputerDetails() {
     if (this.getComputer() == null) {
       System.out.println("Computer not defined");
     } else {
       this.getComputer().printInConsole();
     }
+  }
+
+  public void printInConsole(){
+    System.out.println("First name: " + this.getName());
+    System.out.println("Last name: " + this.getLastName());
+    System.out.println("Year of birth: " + this.getYear());
+    this.printComputerDetails();
+    this.printCourseDetails();
     System.out.println();
     
   }
